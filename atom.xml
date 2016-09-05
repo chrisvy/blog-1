@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Jesse&#39;s life</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2016-09-03T15:57:08.000Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Jesse</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>安装node-sass</title>
+    <link href="http://yoursite.com/2016/08/08/%E5%AE%89%E8%A3%85node-sass/"/>
+    <id>http://yoursite.com/2016/08/08/安装node-sass/</id>
+    <published>2016-08-08T07:52:16.000Z</published>
+    <updated>2016-09-03T15:57:08.000Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass/ npm install node-sass</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>使用nrm控制npm源</title>
+    <link href="http://yoursite.com/2016/07/30/%E4%BD%BF%E7%94%A8nrm%E6%8E%A7%E5%88%B6npm%E6%BA%90/"/>
+    <id>http://yoursite.com/2016/07/30/使用nrm控制npm源/</id>
+    <published>2016-07-30T02:17:17.000Z</published>
+    <updated>2016-07-30T02:47:29.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="nrm是什么"><a href="#nrm是什么" class="headerlink" title="nrm是什么"></a>nrm是什么</h1><p>1.npm源管理器，可自定义增删改查npm源</p>
+<p>2.在N个npm源里快速切换</p>
+<p>3.npm源测速功能</p>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g nrm</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><h2 id="列出已有npm源"><a href="#列出已有npm源" class="headerlink" title="列出已有npm源"></a>列出已有npm源</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nrm ls  //带*号的是当前使用的源</div></pre></td></tr></table></figure>
+<p><img src="http://ob3wg7deo.bkt.clouddn.com/QQ20160730-1@2x.png" alt=""></p>
+<h2 id="切换"><a href="#切换" class="headerlink" title="切换"></a>切换</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nrm use taobao //切换到taobao源</div></pre></td></tr></table></figure>
+<p><img src="http://ob3wg7deo.bkt.clouddn.com/QQ20160730-2@2x.png" alt=""></p>
+<p><img src="http://ob3wg7deo.bkt.clouddn.com/QQ20160730-3@2x.png" alt=""></p>
+<p>已经成功切换到taobao源 这时候执行<code>npm i</code>命令就会从taobao源上下载包并安装</p>
+<h2 id="新增"><a href="#新增" class="headerlink" title="新增"></a>新增</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm add &lt;registry&gt; &lt;url&gt; [home]</div></pre></td></tr></table></figure>
+<p><img src="http://ob3wg7deo.bkt.clouddn.com/QQ20160730-4@2x.png" alt=""></p>
+<h2 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nrm del &lt;registry&gt;</div></pre></td></tr></table></figure>
+<p><img src="http://ob3wg7deo.bkt.clouddn.com/QQ20160730-5@2x.png" alt=""></p>
+<h2 id="测速"><a href="#测速" class="headerlink" title="测速"></a>测速</h2><h3 id="测单一速度"><a href="#测单一速度" class="headerlink" title="测单一速度"></a>测单一速度</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nrm test &lt;registry&gt;</div></pre></td></tr></table></figure>
+<h3 id="测全部速度"><a href="#测全部速度" class="headerlink" title="测全部速度"></a>测全部速度</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nrm test</div></pre></td></tr></table></figure>
+<p><img src="http://ob3wg7deo.bkt.clouddn.com/QQ20160730-6@2x.png" alt=""></p>
+<h1 id="github"><a href="#github" class="headerlink" title="github"></a>github</h1><p><a href="github.com/Pana/nrm">github.com/Pana/nrm</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;nrm是什么&quot;&gt;&lt;a href=&quot;#nrm是什么&quot; class=&quot;headerlink&quot; title=&quot;nrm是什么&quot;&gt;&lt;/a&gt;nrm是什么&lt;/h1&gt;&lt;p&gt;1.npm源管理器，可自定义增删改查npm源&lt;/p&gt;
+&lt;p&gt;2.在N个npm源里快速切换&lt;/p&gt;
+&lt;p&gt;3.npm源测速功能&lt;/p&gt;
+&lt;h1 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h1&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;npm install -g nrm&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="node" scheme="http://yoursite.com/tags/node/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>crontab入门</title>
+    <link href="http://yoursite.com/2016/07/25/crontab%E5%85%A5%E9%97%A8/"/>
+    <id>http://yoursite.com/2016/07/25/crontab入门/</id>
+    <published>2016-07-25T07:13:03.000Z</published>
+    <updated>2016-09-03T15:25:22.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="crontab是啥"><a href="#crontab是啥" class="headerlink" title="crontab是啥"></a>crontab是啥</h3><blockquote>
+<p>linux的定时任务</p>
+</blockquote>
+<h3 id="什么情况下使用，在哪使用"><a href="#什么情况下使用，在哪使用" class="headerlink" title="什么情况下使用，在哪使用"></a>什么情况下使用，在哪使用</h3><blockquote>
+<p>需要定时执行的程序，如天气预报的爬虫程序。</p>
+<p>在SecurtCRT使用</p>
+</blockquote>
+<a id="more"></a>
+<h3 id="简单的crontab命令："><a href="#简单的crontab命令：" class="headerlink" title="简单的crontab命令："></a>简单的crontab命令：</h3><blockquote>
+<p>crontab -help<br>crontab -l   ：查看已有的定时任务<br>crontab -e  ：编辑或新增定时任务<br>crontab -r   ：删除此用户下所有定时任务</p>
+</blockquote>
+<h3 id="一条crontab任务的结构"><a href="#一条crontab任务的结构" class="headerlink" title="一条crontab任务的结构"></a>一条crontab任务的结构</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">   *      *      *      *      *               command</div><div class="line">|      |      |      |      |                  |</div><div class="line">分钟    小时    天     月      周         运行的语句、执行的程序</div><div class="line">(0~59) (0~23) (1~31) (1~12)  (0~6)</div></pre></td></tr></table></figure>
+<blockquote>
+<p>在以上各个字段中，还可以使用以下特殊字符：</p>
+<p>星号（*）：代表所有可能的值。</p>
+<p>逗号（,）：可以用逗号隔开的值指定一个列表范围，例如，“1,2,5,7,8,9”</p>
+<p>中杠（-）：可以用整数之间的中杠表示一个整数范围，例如“2-6”表示“2,3,4,5,6”</p>
+<p>正斜线（/）：可以用正斜线指定时间的间隔频率，例如“0-23/2”表示每两小时执行一次。同时正斜线可以和星号一起使用，例如*/10，如果用在minute字段，表示每十分钟执行一次。</p>
+</blockquote>
+<h3 id="已经写好的实例（天气预报爬虫）"><a href="#已经写好的实例（天气预报爬虫）" class="headerlink" title="已经写好的实例（天气预报爬虫）"></a>已经写好的实例（天气预报爬虫）</h3><blockquote>
+<p>1,5,6,7,8 8,11,18 <em> </em> * /usr/local/php/bin/php /usr/local/project/htdocs/app_rpt/index.php weather/airquality spyForecast &gt;/dev/null 2&gt;&amp;1</p>
+<p>9,13,14,15,16 8,11,18 <em> </em> * /usr/local/php/bin/php /usr/local/project/htdocs/app_rpt/index.php weather/airquality spyIndex &gt;/dev/null 2&gt;&amp;1</p>
+<p>55 7,10,17 <em> </em> * /usr/local/php/bin/php /usr/local/project/htdocs/app_rpt/index.php weather/airquality set0 &gt;/dev/null 2&gt;&amp;1</p>
+<p>*/5 <em> </em> <em> </em> /usr/local/php/bin/php /usr/local/project/htdocs/app_rpt/index.php airpm/get_latest &gt;/dev/null 2&gt;&amp;1</p>
+<p>55 23 <em> </em> * /usr/local/php/bin/php /usr/local/project/htdocs/app_rpt/index.php weather/airquality calculate &gt;/dev/null 2&gt;&amp;1</p>
+</blockquote>
+<h3 id="自己动手操作"><a href="#自己动手操作" class="headerlink" title="自己动手操作"></a>自己动手操作</h3><blockquote>
+<p>*/1 <em> </em> <em> </em> date &gt;&gt; /usr/local/project/htdocs/app_pc/resource/log.txt &gt;/dev/null 2&gt;&amp;1</p>
+<p>将当前服务器的时间输入log.txt，每分钟执行一次</p>
+</blockquote>
+<h3 id="查看crontab日志"><a href="#查看crontab日志" class="headerlink" title="查看crontab日志"></a>查看crontab日志</h3><blockquote>
+<p>进入日志目录  cd  /var/log</p>
+<p>只查看crontab相关日志文件  ls -l cron*</p>
+</blockquote>
+<h3 id="特殊技法"><a href="#特殊技法" class="headerlink" title="特殊技法"></a>特殊技法</h3><p>四月第一个周日执行任务</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">30 19 1-7 4 *  <span class="built_in">test</span> \`date +\%w` <span class="_">-eq</span> 0 &amp;&amp; [<span class="built_in">command</span>]</div></pre></td></tr></table></figure>
+<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><p><a href="http://www.imooc.com/learn/216" target="_blank" rel="external">慕课网 crontab教程</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;crontab是啥&quot;&gt;&lt;a href=&quot;#crontab是啥&quot; class=&quot;headerlink&quot; title=&quot;crontab是啥&quot;&gt;&lt;/a&gt;crontab是啥&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;linux的定时任务&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;什么情况下使用，在哪使用&quot;&gt;&lt;a href=&quot;#什么情况下使用，在哪使用&quot; class=&quot;headerlink&quot; title=&quot;什么情况下使用，在哪使用&quot;&gt;&lt;/a&gt;什么情况下使用，在哪使用&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;需要定时执行的程序，如天气预报的爬虫程序。&lt;/p&gt;
+&lt;p&gt;在SecurtCRT使用&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="linux" scheme="http://yoursite.com/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>破解朋友圈白内障照片教程</title>
+    <link href="http://yoursite.com/2016/01/26/%E7%A0%B4%E8%A7%A3%E6%9C%8B%E5%8F%8B%E5%9C%88%E7%99%BD%E5%86%85%E9%9A%9C%E7%85%A7%E7%89%87%E6%95%99%E7%A8%8B/"/>
+    <id>http://yoursite.com/2016/01/26/破解朋友圈白内障照片教程/</id>
+    <published>2016-01-26T14:48:21.000Z</published>
+    <updated>2016-09-03T15:33:30.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>1.准备好windows笔记本电脑，并确保电脑和手机连在同一个wifi下（mac用户都是土豪，不教了）</p>
+<p>2.电脑上下载安装软件——fiddler，并注意去掉“安装百度杀毒”</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1280556-a9e8c6c3612e70d6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br><a id="more"></a><br>3.顺利安装后，发现桌面并没有多一个软件图标<br><img src="http://upload-images.jianshu.io/upload_images/1280556-0613800eadda30ac.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br>没事，去菜单栏找。。。找到了！悄悄打开它。。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1280556-e78d81ec7865dfaf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>4.首先会弹个窗，随便点yes或no<br><img src="http://upload-images.jianshu.io/upload_images/1280556-aaf13f3f2a0872f9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br>进入软件主界面<br><img src="http://upload-images.jianshu.io/upload_images/1280556-09f17bd137f20dff.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"><br>点击左上方“Tools”-&gt;“Fiddler Options”-&gt;“Connections”，标红那一条打钩，点“OK”关闭</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1280556-b446965349b5938e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br>鼠标移到右上角“Online”处，会弹出一段英文，把“192.168.xxx.xxx”这两个IP地址都记下来。<br><img src="http://upload-images.jianshu.io/upload_images/1280556-0f31a616b08df723.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>5.接下来，到手机上设置wifi代理。以iPhone为例。先看下IP地址，嗯~192.168.1.103，那我们就用刚才记下来的两个IP地址中的192.168.1.106(因为两者比较像)，填到下面的HTTP代理——手动，端口直接填“8888”，然后左上角退出就OK了。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1280556-db874f17dea9133e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br>安卓机同学这一步可以参考这篇<a href="http://jingyan.baidu.com/article/03b2f78c7b6bb05ea237aed2.html" target="_blank" rel="external">如何用Fiddler对Android应用进行抓包</a></p>
+<p>6.进入微信，清理缓存。设置——通用——清理微信存储空间</p>
+<p>7.然后进入朋友圈，一直往下拉就行了，我们就可以看到fiddler已经把朋友圈里的未处理过的照片都抓取到了，红框里的都是抓到的朋友圈照片，随便点开看吧~~<br><img src="http://upload-images.jianshu.io/upload_images/1280556-5efc8a0dee6b0357.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1280556-142d4005db54ea4b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="海哥夫妇甜蜜上镜~"></p>
+<p>8.这是微信的一个小失误，我们在浏览朋友圈白内障照片的时候，原始照片会从服务器飞到你手机上，然后你手机的微信将它模糊处理了。这个软件呢，就是在原始照片到你手机的飞行过程中，把它抓到了！<br><img src="http://upload-images.jianshu.io/upload_images/1280556-5675dee874826cb4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>9.有这闲工夫的可以学一下，我先去发红包看私房照了。。。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;1.准备好windows笔记本电脑，并确保电脑和手机连在同一个wifi下（mac用户都是土豪，不教了）&lt;/p&gt;
+&lt;p&gt;2.电脑上下载安装软件——fiddler，并注意去掉“安装百度杀毒”&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/1280556-a9e8c6c3612e70d6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://yoursite.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>centOs上安装php和nginx</title>
+    <link href="http://yoursite.com/2015/12/12/centOs%E4%B8%8A%E5%AE%89%E8%A3%85php%E5%92%8Cnginx/"/>
+    <id>http://yoursite.com/2015/12/12/centOs上安装php和nginx/</id>
+    <published>2015-12-12T08:02:02.000Z</published>
+    <updated>2016-09-03T16:06:39.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="安装编译环境"><a href="#安装编译环境" class="headerlink" title="安装编译环境"></a>安装编译环境</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum install -y gcc gcc-c++ ncurses-devel perl</div></pre></td></tr></table></figure>
+<hr>
+<h2 id="安装pcre开发包（nginx依赖）"><a href="#安装pcre开发包（nginx依赖）" class="headerlink" title="安装pcre开发包（nginx依赖）"></a>安装pcre开发包（nginx依赖）</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum install -y pcre-devel</div></pre></td></tr></table></figure>
+<hr>
+<h2 id="安装zlib"><a href="#安装zlib" class="headerlink" title="安装zlib"></a>安装zlib</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum install -y zlib-devel</div></pre></td></tr></table></figure>
+<h2 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h2><h2 id="安装Nginx"><a href="#安装Nginx" class="headerlink" title="安装Nginx"></a>安装Nginx</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">wget http://nginx.org/download/nginx-1.7.9.tar.gz</div><div class="line"></div><div class="line">tar xzvf nginx-1.7.9.tar.gz</div><div class="line"></div><div class="line"><span class="built_in">cd</span> nginx-1.7.9</div><div class="line"></div><div class="line">./configure --prefix=/usr/<span class="built_in">local</span>/nginx</div><div class="line"></div><div class="line">--user=nobody --group=nobody &amp;&amp; make &amp;&amp; make install</div></pre></td></tr></table></figure>
+<blockquote>
+<p>wget:下载工具命令tar:解压缩包命令 参数：-x 解压 -z 判断是否使用gzip压缩 -v 解压过程显示文件 -f 使用文档名</p>
+</blockquote>
+<hr>
+<h2 id="启动nginx"><a href="#启动nginx" class="headerlink" title="启动nginx"></a>启动nginx</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/usr/<span class="built_in">local</span>/nginx/sbin/nginx</div></pre></td></tr></table></figure>
+<hr>
+<h2 id="设置nginx开机启动"><a href="#设置nginx开机启动" class="headerlink" title="设置nginx开机启动"></a>设置nginx开机启动</h2><p><strong>写入文件</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vim /etc/init.d/nginx</div></pre></td></tr></table></figure>
+<p><strong>设置成可执行</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">chmod +x /etc/init.d/nginx</div></pre></td></tr></table></figure>
+<p><strong>设置成开机启动</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">chkconfig nginx on</div></pre></td></tr></table></figure>
+<hr>
+<h2 id="安装PHP依赖包"><a href="#安装PHP依赖包" class="headerlink" title="安装PHP依赖包"></a>安装PHP依赖包</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum -y install autoconf libjpeg libjpeg-devel libpng libpng-devel freetype freetype-devel libxml2 libxml2-devel zlib zlib-devel glibc glibc-devel glib2 glib2-devel bzip2 bzip2-devel ncurses ncurses-devel curl curl-devel libmcrypt libmcrypt-devel mysql-devel</div></pre></td></tr></table></figure>
+<hr>
+<h2 id="生成libmysqlclient软链"><a href="#生成libmysqlclient软链" class="headerlink" title="生成libmysqlclient软链"></a>生成libmysqlclient软链</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ln <span class="_">-s</span> /usr/lib64/mysql/libmysqlclient.so.18.0.0 /usr/lib/libmysqlclient.so</div></pre></td></tr></table></figure>
+<blockquote>
+<p>通过查找libmysqlclient,发现是在/usr/lib64/mysql/目录内的libmysqlclient.so.18.0.0做的软连接,PHP默认是去的 /usr/lib/搜索,所以没有找到，所以要在php默认的/usr/lib/目录下生成链接到libmysqlclient的软链。<br><strong>注意，这里的libmysqlclient.so.18.0.0可能更新而修改版本号（之前我参考的教程就是libmysqlclient.so.16.0.0），所以我们要先进入/usr/lib64/mysql/目录，确定这个文件（libmysqlclient.so.18.0.0）的具体名称，再生成软链。</strong></p>
+</blockquote>
+<hr>
+<h2 id="安装libmcrypt"><a href="#安装libmcrypt" class="headerlink" title="安装libmcrypt"></a>安装libmcrypt</h2><blockquote>
+<p>centos源不能安装libmcrypt-devel，由于版权的原因没有自带mcrypt的包。所以这里我们使用自己在网上下载的包，然后上传到服务器的目录上。</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> /usr/<span class="built_in">local</span></div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget http://softlayer.dl.sourceforge.net/sourceforge/mcrypt/libmcrypt-2.5.8.tar.gz (使用附件的包或者自己下载的包)</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">tar -zxvf libmcrypt-2.5.8.tar.gz</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> libmcrypt-2.5.8</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">./configure --prefix=/usr/<span class="built_in">local</span> &amp;&amp; make &amp;&amp; make install</div></pre></td></tr></table></figure>
+<hr>
+<h2 id="安装PHP"><a href="#安装PHP" class="headerlink" title="安装PHP"></a>安装PHP</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget http://cn2.php.net/distributions/php-5.3.29.tar.gz</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">tar xzvf php-5.3.29.tar.gz</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> php-5.3.29</div></pre></td></tr></table></figure>
+<p><strong>内存大于等于1G时</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">./configure --prefix=/usr/<span class="built_in">local</span>/php --with-config-file-path=/usr/<span class="built_in">local</span>/php/etc --enable-fpm --with-mcrypt --enable-mbstring --with-curl --disable-debug -with-bz2 --with-zlib --enable-sockets --enable-zip --with-pcre-regex --with-mysql --with-mysqli --with-gd --with-jpeg-dir &amp;&amp; make &amp;&amp; make install</div></pre></td></tr></table></figure>
+<p><strong>内存小于1G时</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">./configure --prefix=/usr/<span class="built_in">local</span>/php --with-config-file-path=/usr/<span class="built_in">local</span>/php/etc --enable-fpm --with-mcrypt --enable-mbstring --with-curl --disable-debug -with-bz2 --with-zlib --enable-sockets --enable-zip --with-pcre-regex --with-mysql --with-mysqli --with-gd --with-jpeg-dir --disable-fileinfo &amp;&amp; make &amp;&amp; make install</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cp php.ini-production /usr/<span class="built_in">local</span>/php/etc/php.ini</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ln <span class="_">-s</span> <span class="_">-f</span> /usr/<span class="built_in">local</span>/php/bin/phar.phar /usr/<span class="built_in">local</span>/php/bin/phar</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> /usr/<span class="built_in">local</span>/php/etc/</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mv php-fpm.conf.default php-fpm.conf</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mkdir /usr/<span class="built_in">local</span>/php/<span class="built_in">log</span></div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">chmod 777 /usr/<span class="built_in">local</span>/php/<span class="built_in">log</span></div></pre></td></tr></table></figure>
+<hr>
+<h2 id="修改php-fpm-conf文件"><a href="#修改php-fpm-conf文件" class="headerlink" title="修改php-fpm.conf文件"></a>修改php-fpm.conf文件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vim /usr/<span class="built_in">local</span>/php/etc/php-fpm.conf</div></pre></td></tr></table></figure>
+<blockquote>
+<p>设置错误日志路径 <strong>error_log = /usr/local/php/log/php_errors.log</strong></p>
+</blockquote>
+<hr>
+<h2 id="修改php-ini文件"><a href="#修改php-ini文件" class="headerlink" title="修改php.ini文件"></a>修改php.ini文件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vim /usr/<span class="built_in">local</span>/php/etc/php.ini</div></pre></td></tr></table></figure>
+<blockquote>
+<p>设置时区中国 <strong>date.timezone = PRC</strong><br>隐藏php版本号 <strong>expose_php=Off</strong></p>
+</blockquote>
+<hr>
+<h2 id="启动php-fpm"><a href="#启动php-fpm" class="headerlink" title="启动php-fpm"></a>启动php-fpm</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> /usr/<span class="built_in">local</span>/php-5.3.29</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cp sapi/fpm/init.d.php-fpm /etc/init.d/php-fpm</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">chmod +x /etc/init.d/php-fpm</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">chkconfig php-fpm on</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/etc/init.d/php-fpm start</div></pre></td></tr></table></figure>
+<hr>
+<h2 id="配置一个虚拟主机"><a href="#配置一个虚拟主机" class="headerlink" title="配置一个虚拟主机"></a>配置一个虚拟主机</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mkdir /usr/<span class="built_in">local</span>/nginx/conf/vhosts</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vim /usr/<span class="built_in">local</span>/nginx/conf/nginx.conf</div></pre></td></tr></table></figure>
+<blockquote>
+<p>去掉log_format main前的注释，在最后一个“}”前加入一行 <strong>include vhosts/*.config;</strong></p>
+</blockquote>
+<hr>
+<h2 id="检查一下配置文件是否有问题"><a href="#检查一下配置文件是否有问题" class="headerlink" title="检查一下配置文件是否有问题"></a>检查一下配置文件是否有问题</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/usr/<span class="built_in">local</span>/nginx/sbin/nginx -t</div></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>正确响应：</strong><br>nginx: the configuration file /usr/local/nginx/conf/nginx.conf syntax is ok<br>nginx: configuration file /usr/local/nginx/conf/nginx.conf test is successful</p>
+</blockquote>
+<hr>
+<h2 id="重新加载配置文件"><a href="#重新加载配置文件" class="headerlink" title="重新加载配置文件"></a>重新加载配置文件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/usr/<span class="built_in">local</span>/nginx/sbin/nginx <span class="_">-s</span> reload</div></pre></td></tr></table></figure>
+<blockquote>
+<p>每次新写入一个/usr/local/nginx/conf/vhosts/*.conf 文件都要运行这个命令哦</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;安装编译环境&quot;&gt;&lt;a href=&quot;#安装编译环境&quot; class=&quot;headerlink&quot; title=&quot;安装编译环境&quot;&gt;&lt;/a&gt;安装编译环境&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;yum install -y gcc gcc-c++ ncurses-devel perl&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;安装pcre开发包（nginx依赖）&quot;&gt;&lt;a href=&quot;#安装pcre开发包（nginx依赖）&quot; class=&quot;headerlink&quot; title=&quot;安装pcre开发包（nginx依赖）&quot;&gt;&lt;/a&gt;安装pcre开发包（nginx依赖）&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;yum install -y pcre-devel&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;安装zlib&quot;&gt;&lt;a href=&quot;#安装zlib&quot; class=&quot;headerlink&quot; title=&quot;安装zlib&quot;&gt;&lt;/a&gt;安装zlib&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;yum install -y zlib-devel&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;
+    
+    </summary>
+    
+    
+      <category term="linux" scheme="http://yoursite.com/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>第一篇博客</title>
+    <link href="http://yoursite.com/2015/11/18/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://yoursite.com/2015/11/18/第一篇博客/</id>
+    <published>2015-11-18T07:17:50.000Z</published>
+    <updated>2016-09-03T15:33:15.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>终于把自己的github博客弄起来了</p>
+<p>接下来慢慢写点啥</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;终于把自己的github博客弄起来了&lt;/p&gt;
+&lt;p&gt;接下来慢慢写点啥&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="http://yoursite.com/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+</feed>
