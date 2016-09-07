@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Jesse&#39;s life</title>
   
-  <link href="/atom.xml" rel="self"/>
+  <link href="/blog/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2016-09-06T03:20:45.000Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="http://localhost:4000/blog/"/>
+  <updated>2016-09-07T17:51:10.000Z</updated>
+  <id>http://localhost:4000/blog/</id>
   
   <author>
     <name>Jesse</name>
@@ -16,11 +16,32 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>滕王阁序</title>
+    <link href="http://localhost:4000/blog/2016/09/08/%E6%BB%95%E7%8E%8B%E9%98%81%E5%BA%8F/"/>
+    <id>http://localhost:4000/blog/2016/09/08/滕王阁序/</id>
+    <published>2016-09-07T17:37:58.000Z</published>
+    <updated>2016-09-07T17:51:10.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>豫章故郡，洪都新府。星分翼轸，地接衡庐。襟三江而带五湖，控蛮荆而引瓯越。物华天宝，龙光射牛斗之墟；人杰地灵，徐孺下陈蕃之榻。雄州雾列，俊采星驰。台隍枕夷夏之交，宾主尽东南之美。都督阎公之雅望，棨戟遥临；宇文新州之懿范，襜帷暂驻。十旬休假，胜友如云；千里逢迎，高朋满座。腾蛟起凤，孟学士之词宗；紫电青霜，王将军之武库。家君作宰，路出名区；童子何知，躬逢胜饯。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;豫章故郡，洪都新府。星分翼轸，地接衡庐。襟三江而带五湖，控蛮荆而引瓯越。物华天宝，龙光射牛斗之墟；人杰地灵，徐孺下陈蕃之榻。雄州雾列，俊采星驰。台隍枕夷夏之交，宾主尽东南之美。都督阎公之雅望，棨戟遥临；宇文新州之懿范，襜帷暂驻。十旬休假，胜友如云；千里逢迎，高朋满座。腾蛟起
+    
+    </summary>
+    
+    
+      <category term="文学爱好者" scheme="http://localhost:4000/blog/tags/%E6%96%87%E5%AD%A6%E7%88%B1%E5%A5%BD%E8%80%85/"/>
+    
+  </entry>
+  
+  <entry>
     <title>安装node-sass</title>
-    <link href="http://yoursite.com/2016/08/08/%E5%AE%89%E8%A3%85node-sass/"/>
-    <id>http://yoursite.com/2016/08/08/安装node-sass/</id>
+    <link href="http://localhost:4000/blog/2016/08/08/%E5%AE%89%E8%A3%85node-sass/"/>
+    <id>http://localhost:4000/blog/2016/08/08/安装node-sass/</id>
     <published>2016-08-08T07:52:16.000Z</published>
-    <updated>2016-09-06T03:20:45.000Z</updated>
+    <updated>2016-09-07T13:47:36.000Z</updated>
     
     <content type="html"><![CDATA[<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass/ npm install node-sass</div></pre></td></tr></table></figure>
 ]]></content>
@@ -32,14 +53,18 @@
     </summary>
     
     
+      <category term="node" scheme="http://localhost:4000/blog/tags/node/"/>
+    
+      <category term="js" scheme="http://localhost:4000/blog/tags/js/"/>
+    
   </entry>
   
   <entry>
     <title>使用nrm控制npm源</title>
-    <link href="http://yoursite.com/2016/07/30/%E4%BD%BF%E7%94%A8nrm%E6%8E%A7%E5%88%B6npm%E6%BA%90/"/>
-    <id>http://yoursite.com/2016/07/30/使用nrm控制npm源/</id>
+    <link href="http://localhost:4000/blog/2016/07/30/%E4%BD%BF%E7%94%A8nrm%E6%8E%A7%E5%88%B6npm%E6%BA%90/"/>
+    <id>http://localhost:4000/blog/2016/07/30/使用nrm控制npm源/</id>
     <published>2016-07-30T02:17:17.000Z</published>
-    <updated>2016-09-06T03:20:45.000Z</updated>
+    <updated>2016-07-30T02:47:29.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="nrm是什么"><a href="#nrm是什么" class="headerlink" title="nrm是什么"></a>nrm是什么</h1><p>1.npm源管理器，可自定义增删改查npm源</p>
 <p>2.在N个npm源里快速切换</p>
@@ -72,16 +97,16 @@
     </summary>
     
     
-      <category term="node" scheme="http://yoursite.com/tags/node/"/>
+      <category term="node" scheme="http://localhost:4000/blog/tags/node/"/>
     
   </entry>
   
   <entry>
     <title>crontab入门</title>
-    <link href="http://yoursite.com/2016/07/25/crontab%E5%85%A5%E9%97%A8/"/>
-    <id>http://yoursite.com/2016/07/25/crontab入门/</id>
+    <link href="http://localhost:4000/blog/2016/07/25/crontab%E5%85%A5%E9%97%A8/"/>
+    <id>http://localhost:4000/blog/2016/07/25/crontab入门/</id>
     <published>2016-07-25T07:13:03.000Z</published>
-    <updated>2016-09-06T03:20:45.000Z</updated>
+    <updated>2016-09-07T17:48:46.000Z</updated>
     
     <content type="html"><![CDATA[<h3 id="crontab是啥"><a href="#crontab是啥" class="headerlink" title="crontab是啥"></a>crontab是啥</h3><blockquote>
 <p>linux的定时任务</p>
@@ -135,16 +160,16 @@
     </summary>
     
     
-      <category term="linux" scheme="http://yoursite.com/tags/linux/"/>
+      <category term="linux" scheme="http://localhost:4000/blog/tags/linux/"/>
     
   </entry>
   
   <entry>
     <title>破解朋友圈白内障照片教程</title>
-    <link href="http://yoursite.com/2016/01/26/%E7%A0%B4%E8%A7%A3%E6%9C%8B%E5%8F%8B%E5%9C%88%E7%99%BD%E5%86%85%E9%9A%9C%E7%85%A7%E7%89%87%E6%95%99%E7%A8%8B/"/>
-    <id>http://yoursite.com/2016/01/26/破解朋友圈白内障照片教程/</id>
+    <link href="http://localhost:4000/blog/2016/01/26/%E7%A0%B4%E8%A7%A3%E6%9C%8B%E5%8F%8B%E5%9C%88%E7%99%BD%E5%86%85%E9%9A%9C%E7%85%A7%E7%89%87%E6%95%99%E7%A8%8B/"/>
+    <id>http://localhost:4000/blog/2016/01/26/破解朋友圈白内障照片教程/</id>
     <published>2016-01-26T14:48:21.000Z</published>
-    <updated>2016-09-06T03:20:45.000Z</updated>
+    <updated>2016-09-03T15:33:30.000Z</updated>
     
     <content type="html"><![CDATA[<p>1.准备好windows笔记本电脑，并确保电脑和手机连在同一个wifi下（mac用户都是土豪，不教了）</p>
 <p>2.电脑上下载安装软件——fiddler，并注意去掉“安装百度杀毒”</p>
@@ -170,16 +195,16 @@
     </summary>
     
     
-      <category term="前端" scheme="http://yoursite.com/tags/%E5%89%8D%E7%AB%AF/"/>
+      <category term="前端" scheme="http://localhost:4000/blog/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
   <entry>
     <title>centOs上安装php和nginx</title>
-    <link href="http://yoursite.com/2015/12/12/centOs%E4%B8%8A%E5%AE%89%E8%A3%85php%E5%92%8Cnginx/"/>
-    <id>http://yoursite.com/2015/12/12/centOs上安装php和nginx/</id>
+    <link href="http://localhost:4000/blog/2015/12/12/centOs%E4%B8%8A%E5%AE%89%E8%A3%85php%E5%92%8Cnginx/"/>
+    <id>http://localhost:4000/blog/2015/12/12/centOs上安装php和nginx/</id>
     <published>2015-12-12T08:02:02.000Z</published>
-    <updated>2016-09-06T03:20:45.000Z</updated>
+    <updated>2016-09-03T16:06:39.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="安装编译环境"><a href="#安装编译环境" class="headerlink" title="安装编译环境"></a>安装编译环境</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum install -y gcc gcc-c++ ncurses-devel perl</div></pre></td></tr></table></figure>
 <hr>
@@ -275,16 +300,16 @@
     </summary>
     
     
-      <category term="linux" scheme="http://yoursite.com/tags/linux/"/>
+      <category term="linux" scheme="http://localhost:4000/blog/tags/linux/"/>
     
   </entry>
   
   <entry>
     <title>第一篇博客</title>
-    <link href="http://yoursite.com/2015/11/18/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://yoursite.com/2015/11/18/第一篇博客/</id>
+    <link href="http://localhost:4000/blog/2015/11/18/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://localhost:4000/blog/2015/11/18/第一篇博客/</id>
     <published>2015-11-18T07:17:50.000Z</published>
-    <updated>2016-09-06T03:20:45.000Z</updated>
+    <updated>2016-09-03T15:33:15.000Z</updated>
     
     <content type="html"><![CDATA[<p>终于把自己的github博客弄起来了</p>
 <p>接下来慢慢写点啥</p>
@@ -299,7 +324,7 @@
     </summary>
     
     
-      <category term="随笔" scheme="http://yoursite.com/tags/%E9%9A%8F%E7%AC%94/"/>
+      <category term="随笔" scheme="http://localhost:4000/blog/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
