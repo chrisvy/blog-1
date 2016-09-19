@@ -5,7 +5,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="http://chenjiangsong.github.io/blog/"/>
-  <updated>2016-09-19T15:04:09.000Z</updated>
+  <updated>2016-09-19T15:15:42.000Z</updated>
   <id>http://chenjiangsong.github.io/blog/</id>
   
   <author>
@@ -17,10 +17,10 @@
   
   <entry>
     <title>javascript中的糟糕特性（一）</title>
-    <link href="http://chenjiangsong.github.io/blog/2016/09/19/javascript%E4%B8%AD%E7%9A%84%E7%B3%9F%E7%B3%95%E7%89%B9%E6%80%A7/"/>
-    <id>http://chenjiangsong.github.io/blog/2016/09/19/javascript中的糟糕特性/</id>
+    <link href="http://chenjiangsong.github.io/blog/2016/09/19/javascript%E4%B8%AD%E7%9A%84%E7%B3%9F%E7%B3%95%E7%89%B9%E6%80%A7%EF%BC%88%E4%B8%80%EF%BC%89/"/>
+    <id>http://chenjiangsong.github.io/blog/2016/09/19/javascript中的糟糕特性（一）/</id>
     <published>2016-09-19T14:38:42.000Z</published>
-    <updated>2016-09-19T15:04:09.000Z</updated>
+    <updated>2016-09-19T15:15:42.000Z</updated>
     
     <content type="html"><![CDATA[<p>无论前端的大牛还是小白，在与人讨论各个语言的特性时，逢JavaScript必谈其语言缺陷。然而作为一个混迹前端两年的老菜鸟，仍对大家伙口耳相传的『JavaScript语言缺陷』了解甚少。最近看技术稍微注意了一些，在博客中将其记录下来。在更深入地了解这门『吃饭手艺』的同时，也警示自己远离JavaScript的这些糟糕特性，编写出更有质量的代码。<br><a id="more"></a></p>
 <h3 id="全局变量"><a href="#全局变量" class="headerlink" title="全局变量"></a>全局变量</h3><p>定义全局变量有3种方式</p>
@@ -32,6 +32,8 @@
 <p>JavaScript有一个自动修复机制，它试图通过自动插入分号来修正有缺损的程序。这在某种情况下会造成更严重的错误。<br>当我们使用<code>return</code>返回一个对象时<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">return</span></div><div class="line">&#123;</div><div class="line">  status: <span class="literal">true</span></div><div class="line">&#125;</div><div class="line"><span class="comment">//通过自动插入分号机制会变成==&gt;</span></div><div class="line"><span class="keyword">return</span> ;</div><div class="line">&#123;</div><div class="line">  status: <span class="literal">true</span></div><div class="line">&#125;;</div></pre></td></tr></table></figure></p>
 <p>就是<code>return</code>了一个<code>undefined</code>！这可不是我们想要的结果！</p>
 <p>正确的保护<code>return</code>语句不被<strong>自动插入分号机制</strong>坑害的写法：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">return</span> &#123;</div><div class="line">  status: <span class="literal">true</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h3 id="typeof"><a href="#typeof" class="headerlink" title="typeof"></a>typeof</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">typeof</span> <span class="literal">null</span> <span class="comment">// object</span></div></pre></td></tr></table></figure>
+<p>typeof不能辨别<code>null</code>与对象</p>
 ]]></content>
     
     <summary type="html">
