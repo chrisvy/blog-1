@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".js_tag").off().on("click",function(){var a=$(this).data("name");$(".js_one_tag").hide(),console.log($(".js_tag_cloud_list").find("[data-name="+a+"]")),$(".js_tag_cloud_list").find("[data-name="+a+"]").fadeIn(500)})});
+$(document).ready(function(){$(".js_tag").off().on("click",function(){var a=$(this).data("name");$(".js_one_tag").hide(),$(".js_tag_cloud_list").find("[data-name="+a+"]").fadeIn(500)})});
