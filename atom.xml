@@ -5,7 +5,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="http://chenjiangsong.github.io/blog/"/>
-  <updated>2016-10-24T06:24:34.000Z</updated>
+  <updated>2016-11-05T07:22:58.000Z</updated>
   <id>http://chenjiangsong.github.io/blog/</id>
   
   <author>
@@ -14,6 +14,45 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>javascript学习笔记：获取页面节点种数</title>
+    <link href="http://chenjiangsong.github.io/blog/2016/11/05/javascript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%9A%E8%8E%B7%E5%8F%96%E9%A1%B5%E9%9D%A2%E8%8A%82%E7%82%B9%E7%A7%8D%E6%95%B0/"/>
+    <id>http://chenjiangsong.github.io/blog/2016/11/05/javascript学习笔记：获取页面节点种数/</id>
+    <published>2016-11-05T07:21:39.000Z</published>
+    <updated>2016-11-05T07:22:58.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>一行代码：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">new</span> <span class="built_in">Set</span>([...document.all].map(e =&gt; e.tagName)).size</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;一行代码：&lt;/p&gt;
+&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div 
+    
+    </summary>
+    
+    
+      <category term="学习笔记" scheme="http://chenjiangsong.github.io/blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Javascript学习笔记：闭包</title>
+    <link href="http://chenjiangsong.github.io/blog/2016/11/05/Javascript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%9A%E9%97%AD%E5%8C%85/"/>
+    <id>http://chenjiangsong.github.io/blog/2016/11/05/Javascript学习笔记：闭包/</id>
+    <published>2016-11-05T06:58:30.000Z</published>
+    <updated>2016-11-05T07:02:07.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="学习笔记" scheme="http://chenjiangsong.github.io/blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>单行文字两端对齐：用css伪类实现</title>
@@ -498,6 +537,60 @@
     
     
       <category term="javascript" scheme="http://chenjiangsong.github.io/blog/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Javascript学习笔记：URI编码方法</title>
+    <link href="http://chenjiangsong.github.io/blog/2015/11/05/Javascript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%9AURI%E7%BC%96%E7%A0%81%E6%96%B9%E6%B3%95/"/>
+    <id>http://chenjiangsong.github.io/blog/2015/11/05/Javascript学习笔记：URI编码方法/</id>
+    <published>2015-11-05T06:37:09.000Z</published>
+    <updated>2016-11-05T06:59:26.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="编码"><a href="#编码" class="headerlink" title="编码"></a>编码</h3><p>encodeURI()和encodeURIComponent()方法都可以对URI编码发送给浏览器。</p>
+<h4 id="为什么要编码？"><a href="#为什么要编码？" class="headerlink" title="为什么要编码？"></a>为什么要编码？</h4><p>因为有效的URI不能包含某些字符，例如空格。比如给后端接口传递当前页面的url时，包含一些特殊字符可能会在传递过程中或者接收之后解析不了导致失败</p>
+<h4 id="有啥区别"><a href="#有啥区别" class="headerlink" title="有啥区别"></a>有啥区别</h4><p>encodeURI()只将<code>空格</code>转义成<code>%20</code>，适用于整个URI，不会将例如<code>http://</code>里的冒号斜杠都转义<br>encodeURIComponent()会将所有非字母数字都进行编码，使用于URI中的某一段（例如hash）</p>
+<h3 id="解码"><a href="#解码" class="headerlink" title="解码"></a>解码</h3><p>decodeURI()和decodeURIComponent()分别对应上面两种编码方式</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;编码&quot;&gt;&lt;a href=&quot;#编码&quot; class=&quot;headerlink&quot; title=&quot;编码&quot;&gt;&lt;/a&gt;编码&lt;/h3&gt;&lt;p&gt;encodeURI()和encodeURIComponent()方法都可以对URI编码发送给浏览器。&lt;/p&gt;
+&lt;h4 id=&quot;为什么要编码？
+    
+    </summary>
+    
+    
+      <category term="学习笔记" scheme="http://chenjiangsong.github.io/blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Javascript学习笔记：arguments</title>
+    <link href="http://chenjiangsong.github.io/blog/2015/11/05/Javascript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%9Aarguments/"/>
+    <id>http://chenjiangsong.github.io/blog/2015/11/05/Javascript学习笔记：arguments/</id>
+    <published>2015-11-05T05:58:25.000Z</published>
+    <updated>2016-11-05T06:59:14.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>1.ES函数不介意传递进来多少参数，因为参数在函数内部是用一个数组：<code>arguments</code>（准确说是『类数组』）来表示的<br>2.<code>arguments</code>可以使用方括号语法来访问每一个元素，并且有length属性<br>3.<code>arguments</code>对象可以与命名参数一起使用</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">doAdd</span>(<span class="params">num1, num2</span>) </span>&#123;</div><div class="line">    <span class="keyword">if</span> (<span class="built_in">arguments</span>.length === <span class="number">1</span>) &#123;</div><div class="line">        alert(num1)</div><div class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (<span class="built_in">arguments</span>.length === <span class="number">2</span>) &#123;</div><div class="line">        alert(<span class="built_in">arguments</span>[<span class="number">0</span>] + num2)</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">doAdd(<span class="number">10</span>)      <span class="comment">// 10</span></div><div class="line">doAdd(<span class="number">10</span>, <span class="number">20</span>)  <span class="comment">// 30</span></div></pre></td></tr></table></figure>
+<p>4.<code>arguments</code>的值永远与对应命名参数的值保持同步</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">doAdd</span>(<span class="params">num1, num2</span>) </span>&#123;</div><div class="line">    <span class="built_in">arguments</span>[<span class="number">1</span>] = <span class="number">10</span></div><div class="line">    alert(<span class="built_in">arguments</span>[<span class="number">0</span>] + num2)</div><div class="line">&#125;</div><div class="line">doAdd(<span class="number">10</span>, <span class="number">20</span>)   <span class="comment">// 20</span></div></pre></td></tr></table></figure>
+<p>5.<code>arguments</code>对象的长度是由参数个数决定，不是由定义函数时的命名参数个数决定<br>6.<code>arguments</code>转成数组用<code>Array.prototype.slice.call</code>方法</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">doAdd</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> args = <span class="built_in">Array</span>.prototype.slice.call(<span class="built_in">arguments</span>)</div><div class="line">    <span class="built_in">console</span>.log(<span class="built_in">arguments</span>)</div><div class="line">    <span class="built_in">console</span>.log(args)</div><div class="line">&#125;</div><div class="line">doAdd(<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>)</div></pre></td></tr></table></figure>
+<p><img src="http://ob3wg7deo.bkt.clouddn.com/14783263408259.jpg" alt=""><br>7.<code>callee</code>属性<br>arguments对象有callee属性， 该属性是一个指针，指向拥有这个arguments对象的函数。在递归函数中，推荐使用<code>arguments.callee</code></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//阶乘函数</span></div><div class="line"></div><div class="line"><span class="comment">//bad</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">factorial</span>(<span class="params">num</span>) </span>&#123;</div><div class="line">    <span class="keyword">if</span> (num &lt;= <span class="number">1</span>) &#123;</div><div class="line">        <span class="keyword">return</span> <span class="number">1</span></div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">        <span class="keyword">return</span> num * factorial(num - <span class="number">1</span>)</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">//good</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">factorial</span>(<span class="params">num</span>) </span>&#123;</div><div class="line">    <span class="keyword">if</span> (num &lt;= <span class="number">1</span>) &#123;</div><div class="line">        <span class="keyword">return</span> <span class="number">1</span></div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">        <span class="keyword">return</span> num * <span class="built_in">arguments</span>.callee(num - <span class="number">1</span>)</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>防止对factorial函数赋值到另一个函数名时，内部递归调用factorial失败</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;1.ES函数不介意传递进来多少参数，因为参数在函数内部是用一个数组：&lt;code&gt;arguments&lt;/code&gt;（准确说是『类数组』）来表示的&lt;br&gt;2.&lt;code&gt;arguments&lt;/code&gt;可以使用方括号语法来访问每一个元素，并且有length属性&lt;br&gt;3.&lt;co
+    
+    </summary>
+    
+    
+      <category term="学习笔记" scheme="http://chenjiangsong.github.io/blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
