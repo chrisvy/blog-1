@@ -5,7 +5,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="http://chenjiangsong.github.io/blog/"/>
-  <updated>2016-11-05T07:22:58.000Z</updated>
+  <updated>2016-12-15T07:18:33.000Z</updated>
   <id>http://chenjiangsong.github.io/blog/</id>
   
   <author>
@@ -14,6 +14,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HTML5跟之前的HTML有什么不同</title>
+    <link href="http://chenjiangsong.github.io/blog/2016/12/05/HTML5%E8%B7%9F%E4%B9%8B%E5%89%8D%E7%9A%84HTML%E6%9C%89%E4%BB%80%E4%B9%88%E4%B8%8D%E5%90%8C/"/>
+    <id>http://chenjiangsong.github.io/blog/2016/12/05/HTML5跟之前的HTML有什么不同/</id>
+    <published>2016-12-05T07:17:04.000Z</published>
+    <updated>2016-12-15T07:18:33.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><em>HTML</em>是超文本标记语言。所谓超文本，就是图片、链接、音乐甚至程序。HTML5（以下简称<em>HTML5</em>）和HTML4.01（以下简称<em>HTML</em>）及以前的版本有着根源上的差别。<br>提到标记语言就不得不提<em>SGML</em>（标准通用标记语言）。SGML提供了标记语言的语法和规范。<em>XML</em>是SGML的一个子集，HTML是SGML的一个应用。<br>我们先来聊聊XML。XML全称是<em>可拓展标记语言</em>，意思就是在双方约定好的前提规范下，标签名是可以自由定义的。这个<em>约定好的前提规范</em>就是DTD（文档规则定义）。<br><a id="more"></a><br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">&lt;?xmlversion="1.0"?&gt;</div><div class="line"><span class="meta">&lt;!DOCTYPE note[</span></div><div class="line">&lt;!ELEMENT note(to,from,heading,body)&gt;</div><div class="line">&lt;!ELEMENT to(#PCDATA)&gt;</div><div class="line">&lt;!ELEMENT from(#PCDATA)&gt;</div><div class="line">&lt;!ELEMENT heading(#PCDATA)&gt;</div><div class="line">&lt;!ELEMENT body(#PCDATA)&gt;</div><div class="line">]&gt;</div><div class="line"><span class="tag">&lt;<span class="name">note</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">to</span>&gt;</span>Tove<span class="tag">&lt;/<span class="name">to</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">from</span>&gt;</span>Jani<span class="tag">&lt;/<span class="name">from</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">heading</span>&gt;</span>Reminder<span class="tag">&lt;/<span class="name">heading</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span>Don'tforgetmethisweekend<span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">note</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p>这里的<code>&lt;!doctype note&gt;</code>则是规定了<code>note</code>为xml文档的根元素，就像HTML的doctype规定了<code>html</code>是文档的根元素一样<code>&lt;!doctype html&gt;</code><br>接下来的就是DTD，规定了<code>note</code>,<code>to</code>,<code>from</code>,<code>heading</code>,<code>body</code>这几个标签元素的作用（是用来传递数据的）</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">!ELEMENT</span> <span class="attr">note</span>(<span class="attr">to</span>,<span class="attr">from</span>,<span class="attr">heading</span>,<span class="attr">body</span>)&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">!ELEMENT</span> <span class="attr">to</span>(#<span class="attr">PCDATA</span>)&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">!ELEMENT</span> <span class="attr">from</span>(#<span class="attr">PCDATA</span>)&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">!ELEMENT</span> <span class="attr">heading</span>(#<span class="attr">PCDATA</span>)&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">!ELEMENT</span> <span class="attr">body</span>(#<span class="attr">PCDATA</span>)&gt;</span></div></pre></td></tr></table></figure>
+<p>同样，在HTML4.01及之前的版本中，doctype后面也是跟了DTD。我们打开<a href="http://www.w3.org/TR/html4/strict.dtd" target="_blank" rel="external">http://www.w3.org/TR/html4/strict.dtd</a>可以看到对HTML各个标签的详细定义。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot; &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;</div></pre></td></tr></table></figure>
+<p>基于此，我们可以浅显地定义一下，HTML4.01及之前的版本是适用一套通用DTD的XML文档。<br>那为什么HTML5的概念会被提出呢？HTML5跟之前的HTML又有什么区别呢？<br>我们还是来看一下XML，XML是被用来传递数据的，HTML是处理超文本的，处理超文本这件事不符合SGML的规范，所以在HTML5之前，基于SGML的HTML4.01是无法处理<code>video</code>、<code>audio</code>等超文本元素的。所以W3C为了网页应用更好的发展，制定了不基于SGML的新的HTML5规范，在沿用老版本功能的同时，也放弃了SGML的种种限制。自然而然，DTD这个SGML的产物也就不需要再出现在HTML5文档的头部了。可以说，HTML5能推出新标签，得益于脱离了SGML规范这个本质。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;em&gt;HTML&lt;/em&gt;是超文本标记语言。所谓超文本，就是图片、链接、音乐甚至程序。HTML5（以下简称&lt;em&gt;HTML5&lt;/em&gt;）和HTML4.01（以下简称&lt;em&gt;HTML&lt;/em&gt;）及以前的版本有着根源上的差别。&lt;br&gt;提到标记语言就不得不提&lt;em&gt;SGML&lt;/em&gt;（标准通用标记语言）。SGML提供了标记语言的语法和规范。&lt;em&gt;XML&lt;/em&gt;是SGML的一个子集，HTML是SGML的一个应用。&lt;br&gt;我们先来聊聊XML。XML全称是&lt;em&gt;可拓展标记语言&lt;/em&gt;，意思就是在双方约定好的前提规范下，标签名是可以自由定义的。这个&lt;em&gt;约定好的前提规范&lt;/em&gt;就是DTD（文档规则定义）。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="html" scheme="http://chenjiangsong.github.io/blog/tags/html/"/>
+    
+  </entry>
   
   <entry>
     <title>javascript学习笔记：获取页面节点种数</title>
@@ -432,18 +458,44 @@
   </entry>
   
   <entry>
-    <title>安装node-sass</title>
-    <link href="http://chenjiangsong.github.io/blog/2016/01/08/%E5%AE%89%E8%A3%85node-sass/"/>
-    <id>http://chenjiangsong.github.io/blog/2016/01/08/安装node-sass/</id>
-    <published>2016-01-08T07:52:16.000Z</published>
-    <updated>2016-09-22T06:22:09.000Z</updated>
+    <title>2015年下半年工作总结（补）</title>
+    <link href="http://chenjiangsong.github.io/blog/2016/01/22/2015%E5%B9%B4%E4%B8%8B%E5%8D%8A%E5%B9%B4%E5%B7%A5%E4%BD%9C%E6%80%BB%E7%BB%93/"/>
+    <id>http://chenjiangsong.github.io/blog/2016/01/22/2015年下半年工作总结/</id>
+    <published>2016-01-22T11:38:07.000Z</published>
+    <updated>2016-12-15T07:18:44.000Z</updated>
     
-    <content type="html"><![CDATA[<p>不用怀疑了 亲测可用<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass/ npm install node-sass</div></pre></td></tr></table></figure></p>
+    <content type="html"><![CDATA[<p>又到了总结的时候。刚刚过去的下半年，发生了两件事</p>
+<p>##美的官网购买流程的以旧换新、优惠券两次大迭代</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;不用怀疑了 亲测可用&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre
+      &lt;p&gt;又到了总结的时候。刚刚过去的下半年，发生了两件事&lt;/p&gt;
+&lt;p&gt;##美的官网购买流程的以旧换新、优惠券两次大迭代&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="http://chenjiangsong.github.io/blog/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>安装node-sass</title>
+    <link href="http://chenjiangsong.github.io/blog/2016/01/08/%E5%AE%89%E8%A3%85node-sass/"/>
+    <id>http://chenjiangsong.github.io/blog/2016/01/08/安装node-sass/</id>
+    <published>2016-01-08T07:52:16.000Z</published>
+    <updated>2016-12-15T06:50:32.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>不用怀疑了 亲测可用</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass/ npm install node-sass</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;不用怀疑了 亲测可用&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pr
     
     </summary>
     
@@ -706,30 +758,6 @@
     <summary type="html">
     
       &lt;p&gt;这半年来踏踏实实做了一些项目，有长期大坑智能家居，有自己瞎玩的图片上传，有第一次h5体验的校园活动，最后以大官网的订单系统作为上半年结尾。工作内容非常充实，自己的工作状态略有起伏，总体来说，上半年的表现还是勉强能够满意。接下来的总结正文，将分别从各个项目经历及个人的工作生活感受这两个方面来细说一下。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="随笔" scheme="http://chenjiangsong.github.io/blog/tags/%E9%9A%8F%E7%AC%94/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2014下半年工作总结（补）</title>
-    <link href="http://chenjiangsong.github.io/blog/2015/02/13/2014%E4%B8%8B%E5%8D%8A%E5%B9%B4%E5%B7%A5%E4%BD%9C%E6%80%BB%E7%BB%93/"/>
-    <id>http://chenjiangsong.github.io/blog/2015/02/13/2014下半年工作总结/</id>
-    <published>2015-02-13T15:46:50.000Z</published>
-    <updated>2016-11-05T08:47:30.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>下半年入职了美的电商，由之前的散兵游勇，变成了正规军的一员，团队里前辈们的肯定，对我的职业发展起到了莫大的帮助。由于到目前为止，自己接触前端的时间不长，经验不足，技术欠缺，刚来美的的那段时间，工作一直都是磕磕绊绊。好在有师傅aiden和lord，光哥，luke的不停指导，终于能让自己在团队中发挥自己的力量，为公司做出贡献。接下来，主要记录一下，这半年所经历的项目。</p>
-<h2 id="京东评论爬虫"><a href="#京东评论爬虫" class="headerlink" title="京东评论爬虫"></a>京东评论爬虫</h2><p>刚进公司接触的第一个项目，内容爬取京东商城里美的产品的评论。因为美的这边沿用的是腾讯拍拍的开发模式，大型应用（如官网，服务号）用C++操作DAO，php做中间层；小型应用用php直接操作数据库，完全由前端来开发。所以，差不多在这里的前端是类全栈的工程师了，这对我一个刚入门连js都不是很熟练的菜鸟来说，无疑是很大的挑战。<br>基本内容是：页面输入待爬商品id-&gt;爬取评论-&gt;存到数据库-&gt;页面展示<br>这个项目里，我接触到了php和数据库的操作，使用curl函数爬取数据，使用正则解析数据，自己写ajax的客户端请求和服务端相应。虽然不是一个成功完结的项目，但是对我个人来说，却是一个里程碑式的经历。<br>磕磕绊绊的一个月后，项目因为没有产品经理接手，所以搁浅了。</p>
-<h2 id="美的PC官网——旗舰店地图页"><a href="#美的PC官网——旗舰店地图页" class="headerlink" title="美的PC官网——旗舰店地图页"></a>美的PC官网——旗舰店地图页</h2><p>使用百度地图的SDK，调用后端返回的门店数据，在地图页上展示出来。页面上有区域选择、门店点击详情等交互，使用的技术栈比较窄，勉勉强强的一个项目</p>
-<h2 id="微信管理平台–自动回复"><a href="#微信管理平台–自动回复" class="headerlink" title="微信管理平台–自动回复"></a>微信管理平台–自动回复</h2><p>第一次接触到微信开发，并且是前端和服务端并行开发。这属于一个内容运营人员的管理平台功能，所以页面样式和功能设计都需要靠自己完成。因为涉及到服务号的批量自动回复功能，有大量的dom操作，所以我选择了avalon.js作为前端页面的基础框架。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;下半年入职了美的电商，由之前的散兵游勇，变成了正规军的一员，团队里前辈们的肯定，对我的职业发展起到了莫大的帮助。由于到目前为止，自己接触前端的时间不长，经验不足，技术欠缺，刚来美的的那段时间，工作一直都是磕磕绊绊。好在有师傅aiden和lord，光哥，luke的不停指导，终
     
     </summary>
     
